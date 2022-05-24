@@ -2,7 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # static_url = "http://localhost:8000"
-static_url = "http://0.0.0.0"
+# static_url = "http://0.0.0.0"
+static_url = "https://ajmalk.com"
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
