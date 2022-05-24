@@ -8,6 +8,7 @@ static_url = "https://ajmalk.com"
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     profile_image = models.ImageField(blank=True, null=True)
+    resume = models.FileField(blank=True, null=True)
     name = models.CharField(max_length=50, blank=True, null=True)
     socials = models.ManyToManyField('Social', blank=True)
     email = models.EmailField(blank=True, null=True)

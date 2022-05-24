@@ -19,7 +19,7 @@ function App() {
   const fetchData = () => {
     axios({
       method: "get",
-      url: "http://0.0.0.0/api/v1/core/home/"
+      url: "https://ajmalk.com/api/v1/core/home/"
     })
     .then((res) => {
       dispatch(setUserDetails(res.data.data));

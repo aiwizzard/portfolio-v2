@@ -14,7 +14,7 @@ function Contact() {
     };
     axios({
       method: "post",
-      url: "http://0.0.0.0:8000/api/v1/core/submit_contact/",
+      url: "https://ajmalk.com/api/v1/core/submit_contact/",
       data: data,
     })
       .then((res) => {
