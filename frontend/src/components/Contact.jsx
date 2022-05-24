@@ -14,7 +14,7 @@ function Contact() {
     };
     axios({
       method: "post",
-      url: "http://127.0.0.1:8000/api/v1/core/submit_contact/",
+      url: "http://0.0.0.0:8000/api/v1/core/submit_contact/",
       data: data,
     })
       .then((res) => {

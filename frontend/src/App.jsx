@@ -19,7 +19,7 @@ function App() {
   const fetchData = () => {
     axios({
       method: "get",
-      url: "http://127.0.0.1:8000/api/v1/core/home/"
+      url: "http://0.0.0.0/api/v1/core/home/"
     })
     .then((res) => {
       dispatch(setUserDetails(res.data.data));

@@ -13,4 +13,4 @@ python manage.py migrate
 
 # uwsgi --socket :9000 --workers 4 --master --enable-threads --module ajmalk.wsgi
 
-gunicorn ajmalk.wsgi:application --bind 0.0.0.0:8000 --workers 4
+gunicorn portfolio.wsgi:application --bind 0.0.0.0:8000 --workers 4

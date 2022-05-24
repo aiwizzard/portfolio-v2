@@ -20,7 +20,7 @@ class ProjectSerializer(serializers.ModelSerializer):
     tags = TagSerializer("tags", many=True)
     class Meta:
         model = Project
-        fields = "__all__"
+        fields = ["id", "title", "body", "image_url", "tags"]
 
 class ExperienceSerializer(serializers.ModelSerializer):
     duties = DutySeriallizer("duties", many=True)
