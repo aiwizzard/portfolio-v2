@@ -17,8 +17,8 @@ RUN mkdir -p /vol/static && \
     chmod 755 /vol/web/media && \
     touch /etc/nginx/conf.d/default.conf && \
     chown nginx:nginx /etc/nginx/conf.d/default.conf && \
-    # chown nginx:nginx /etc/nginx/certs/privkey.pem && \
-    # chown nginx:nginx /etc/nginx/certs/fullchain.pem && \
+    chown nginx:nginx /etc/nginx/certs/privkey.pem && \
+    chown nginx:nginx /etc/nginx/certs/fullchain.pem && \
     chmod +x /run.sh
 
 VOLUME /vol/static

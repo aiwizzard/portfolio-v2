@@ -1,7 +1,11 @@
 server {
 	listen 80;
+	listen 443 ssl;
 	
-    
+    server_name ajmalk.com;
+	
+	ssl_certificate /etc/nginx/certs/fullchain.pem;
+    ssl_certificate_key /etc/nginx/certs/privkey.pem;
 
     location / {
         proxy_pass http://frontend:3000;
