@@ -1,12 +1,10 @@
-import img from "../images/card-top.jpg";
-
 function ProjectItem({ project }) {
   return (
     <>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <img className="w-full" src={img} alt="Sunset in the mountains" />
+        <img className="w-full" src={project.image_url} alt="Sunset in the mountains" />
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">{project.body}</div>
+          <div className="font-bold text-xl mb-2">{project.title}</div>
           <p className="text-gray-700 text-base">{project.body}</p>
         </div>
         <div className="px-6 pt-4 pb-2">
