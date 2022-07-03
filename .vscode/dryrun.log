@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/ajmal/Projects/dev/portfolio-v2'
+git pull origin
+docker-compose build app
+docker-compose up --no-deps -d app
+make: Leaving directory '/home/ajmal/Projects/dev/portfolio-v2'
+ 

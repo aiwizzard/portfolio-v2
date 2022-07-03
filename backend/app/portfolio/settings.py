@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'core',
 ]
 
+CSRF_TRUSTED_ORIGINS = ["https://ajmalk.com"]
+
 CORS_ORIGIN_ALLOW_ALL = True
 
 MIDDLEWARE = [
