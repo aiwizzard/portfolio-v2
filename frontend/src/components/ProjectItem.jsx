@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 function ProjectItem({ project }) {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="max-w-sm rounded overflow-hidden shadow-lg">
+      <div className="max-w-sm rounded overflow-hidden shadow-lg cursor-pointer" onClick={() => navigate(`projects/${project.id}`)}>
         <img className="w-full" src={project.image_url} alt="Sunset in the mountains" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{project.title}</div>
