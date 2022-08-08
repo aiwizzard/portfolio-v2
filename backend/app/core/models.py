@@ -44,6 +44,7 @@ class Social(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=40, blank=True, null=True)
     body = models.TextField(blank=True, null=True)
+    link = models.URLField(max_length=200, blank=True, null=True)
     image = models.ImageField(blank=True, null=True)
     tags = models.ManyToManyField('Tag', blank=True)
 
