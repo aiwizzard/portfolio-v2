@@ -16,7 +16,7 @@ function HomePage() {
   const fetchData = () => {
     axios({
       method: "get",
-      url: "https://ajmalk.com/api/v1/core/home/",
+      url: "http://127.0.0.1:8000/api/v1/core/home/",
     })
       .then((res) => {
         dispatch(setUserDetails(res.data.data));
@@ -35,15 +35,16 @@ function HomePage() {
       {userDetails && (
         <div className="bg-white">
           <Banner />
-          <div className="border-b border-purple-500 mx-10 my-10" />
+          {/* <div className="border-b border-purple-500 mx-10 my-10" />
           <Experience />
-          <div className="border-b border-purple-500 mx-10 my-10" />
-          <Services />
+          <div className="border-b border-purple-500 mx-10 my-10" /> */}
+          {/* <Services />
           <div className="border-b border-purple-500 mx-10 my-10" />
           <Projects />
           <div className="border-b border-purple-500 mx-10 my-10" />
           <Contact />
-          <Footer />
+          <Footer /> */}
+          <Projects />
         </div>
       )}
     </>

@@ -13,7 +13,7 @@ function ProjectDetailPage() {
   const fetchProjectDetails = (id) => {
     axios({
       method: "get",
-      url: `https://ajmalk.com/api/v1/core/projects/${id}/`,
+      url: `http://127.0.0.1:8000/api/v1/core/projects/${id}/`,
     })
       .then((res) => {
         dispatch(setProjectDetails(res.data.data));
@@ -50,7 +50,7 @@ function ProjectDetailPage() {
             rel="noopener noreferrer"
           >
             Check Out{" "}
-            <span className="font-semibold">
+            <span className="font-semibold text-center">
               {projectDetails && projectDetails.title}
             </span>
           </a>

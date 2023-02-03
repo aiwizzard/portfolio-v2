@@ -4,11 +4,10 @@ function ProjectItem({ project }) {
   const navigate = useNavigate();
   return (
     <>
-      <div className="max-w-sm rounded overflow-hidden shadow-lg cursor-pointer" onClick={() => navigate(`projects/${project.id}`)}>
-        <img className="w-full" src={project.image_url} alt="Sunset in the mountains" />
+      <div className="max-w-sm rounded cursor-pointer" onClick={() => navigate(`projects/${project.id}`)}>
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">{project.title}</div>
-          <p className="text-gray-700 text-base">{project.body}</p>
+          <div className="font-bold text-xl mb-2 text-center">{project.title}</div>
+          <p className="text-gray-700 text-base text-center">{project.body}</p>
         </div>
         <div className="px-6 pt-4 pb-2">
           {project.tags.map((tag) => {
