@@ -45,7 +45,7 @@ function ProjectDetailPage() {
         />
         {projectDetails && projectDetails.link && (
           <a
-            href="https://foodapp.ajmalk.com"
+            href={projectDetails.link}
             target="_blank"
             rel="noopener noreferrer"
           >
