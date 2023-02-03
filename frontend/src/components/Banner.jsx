@@ -1,4 +1,4 @@
-import heroImg from "../images/hero2.png";
+import Hero from "../images/profile.png";
 import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import { useSelector } from "react-redux";
 
@@ -8,25 +8,43 @@ function Banner() {
   return (
     <>
       {userDetails && (
-        <div className="h-screen flex flex-col justify-center">
-          <div className="flex self-center flex-col md:flex-row justify-center items-center space-x-0 md:space-x-14 ">
-            <div className="rounded-full w-56 bg-gradient-to-r p-[5px] from-indigo-500 via-purple-500 to-pink-500">
-              <img
-                className="rounded-full mx-auto"
-                src={userDetails["image_url"]}
-                alt=""
-              />
+        <div class="mt-10 flex flex-row justify-center">
+        <div class="flex flex-col justify-center">
+          <div
+            class="flex self-center flex-col md:flex-row justify-center -ml-56 items-start space-x-0 md:space-x-14 "
+          >
+            <div class="rounded-full w-56">
+              <img class="rounded-full mx-auto" src={Hero} alt="" />
             </div>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-semibold w-11/12 text-gray-700 lg:w-2/3">
-              Hello, My name is&nbsp;
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-                Ajmal
-              </span>
-              &nbsp;I love programming and I do awesome projects.
-            </h1>
+      
+            <div class="w-2/5 mt-28">
+              <p class="text-lg leading-10">
+                <span class="font-bold text-xl">Hi, Iam ajmal</span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit fugit porro perspiciatis voluptas,
+                ab soluta veritatis laboriosam maiores alias maxime omnis aliquam provident hic corporis voluptatum
+                et incidunt mollitia consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Velit fugit porro perspiciatis voluptas, ab soluta veritatis laboriosam maiores alias maxime
+                omnis aliquam provident hic corporis voluptatum et incidunt mollitia consequuntur. Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Velit fugit porro perspiciatis voluptas, ab soluta
+                veritatis laboriosam maiores alias maxime omnis aliquam provident hic corporis voluptatum et
+                incidunt mollitia consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+                fugit porro perspiciatis voluptas, ab soluta veritatis laboriosam maiores alias maxime omnis
+                aliquam provident hic corporis voluptatum et incidunt mollitia consequuntur. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Velit fugit porro perspiciatis voluptas, ab soluta
+                veritatis laboriosam maiores alias maxime omnis aliquam provident hic corporis voluptatum et
+                incidunt mollitia consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+                fugit porro perspiciatis voluptas, ab soluta veritatis laboriosam maiores alias maxime omnis
+                aliquam provident hic corporis voluptatum et incidunt mollitia consequuntur. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Velit fugit porro perspiciatis voluptas, ab soluta
+                veritatis laboriosam maiores alias maxime omnis aliquam provident hic corporis voluptatum et
+                incidunt mollitia consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+                fugit porro perspiciatis voluptas, ab soluta veritatis laboriosam maiores alias maxime omnis
+                aliquam provident hic corporis voluptatum et incidunt mollitia consequuntur.
+              </p>
+            </div>
           </div>
-
-          <div className="flex space-x-4 self-center text-md md:text-xl">
+      
+          <div class="flex space-x-4 self-center text-md md:text-xl mt-8">
             <a href="https://github.com/aiwizzard">
               <FaGithub />
             </a>
@@ -40,7 +58,9 @@ function Banner() {
               <FaInstagram />
             </a>
           </div>
+          
         </div>
+      </div>
       )}
     </>
   );
