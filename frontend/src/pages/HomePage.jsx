@@ -44,7 +44,7 @@ function HomePage() {
           <div className="border-b border-purple-500 mx-10 my-10" />
           <Contact />
           <Footer /> */}
-          <Projects />
+          {/* <Projects /> */}
         </div>
       )}
     </>
