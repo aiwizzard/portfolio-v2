@@ -13,7 +13,7 @@ function ProjectDetailPage() {
   const fetchProjectDetails = (id) => {
     axios({
       method: "get",
-      url: `http://127.0.0.1:8000/api/v1/core/projects/${id}/`,
+      url: `${process.env.REACT_APP_API_URL}/api/v1/core/projects/${id}/`,
     })
       .then((res) => {
         dispatch(setProjectDetails(res.data.data));
