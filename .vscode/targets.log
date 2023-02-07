@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Feb  6 13:24:46 2023
+# Make data base, printed on Tue Feb  7 15:35:14 2023
 
 # Variables
 
@@ -107,7 +107,7 @@ SNAP_REEXEC =
 # environment
 ZSH = /home/ajmal/.oh-my-zsh
 # environment
-VSCODE_PID = 115800
+VSCODE_PID = 4806
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -119,7 +119,7 @@ BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
 CONDA_PYTHON_EXE = /home/ajmal/miniconda3/bin/python
 # environment
-SESSION_MANAGER = local/ajmal-manjaro:@/tmp/.ICE-unix/1024,unix/ajmal-manjaro:/tmp/.ICE-unix/1024
+SESSION_MANAGER = local/ajmal-manjaro:@/tmp/.ICE-unix/1216,unix/ajmal-manjaro:/tmp/.ICE-unix/1216
 # automatic
 *F = $(notdir $*)
 # environment
@@ -165,7 +165,7 @@ AWS_VAULT_BACKEND = file
 # environment
 SNAP = /snap/code/117
 # environment
-INVOCATION_ID = 49e60e2cf2a64e9da76af9a09c795268
+INVOCATION_ID = 051d50c648904eabb9d55aa27f626d6c
 # environment
 SNAP_REVISION = 117
 # environment
@@ -205,7 +205,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := change-deploy-app
 # environment
-SYSTEMD_EXEC_PID = 1100
+SYSTEMD_EXEC_PID = 1308
 # environment
 DISPLAY = :0
 # environment
@@ -221,7 +221,7 @@ SNAP_DATA = /var/snap/code/117
 # environment
 SNAP_CONTEXT = -CRwRsb3C7J-_ooEYh7IOCkd7LqlAqT91pJAOydUQdYOXRk-LN8w
 # environment
-MANAGERPID = 930
+MANAGERPID = 1121
 # environment
 LC_MEASUREMENT = en_IN
 # environment
@@ -239,7 +239,7 @@ GDK_PIXBUF_MODULE_FILE = /home/ajmal/snap/code/common/.cache/gdk-pixbuf-loaders.
 # environment
 _CE_M = 
 # environment
-JOURNAL_STREAM = 8:18965
+JOURNAL_STREAM = 8:24966
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -296,7 +296,6 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Load=140/1024=14%, Rehash=0, Collisions=9/170=5%
 
 # Pattern-specific Variable Values
- 
 
 # No pattern-specific variable values.
 
@@ -309,6 +308,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Implicit Rules
 
 # No implicit rules.
+ 
 
 # Files
 
@@ -364,6 +364,6 @@ all:
 # strcache performance: lookups = 26 / hit rate = 23%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=0/26=0%
-# Finished Make data base on Mon Feb  6 13:24:46 2023
+# Finished Make data base on Tue Feb  7 15:35:14 2023
 
  
