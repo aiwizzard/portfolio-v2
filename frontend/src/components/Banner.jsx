@@ -10,12 +10,12 @@ function Banner() {
       {userDetails && (
         <div className="mt-10 flex flex-row justify-center">
           <div className="flex flex-col justify-center">
-            <div className="flex self-center flex-col md:flex-row justify-center -ml-56 items-start space-x-0 md:space-x-14 ">
-              <div className="rounded-full w-56">
+            <div className="flex self-center flex-col md:flex-row justify-center md:-ml-56 md:p-6 items-center md:items-start space-x-0 md:space-x-14 ">
+              <div className="rounded-full w-56 hidden md:flex">
                 <img className="rounded-full mx-auto" src={Hero} alt="" />
               </div>
 
-              <div className="w-1/3 font-poppins mt-28 text-lg leading-8 flex flex-col space-y-6">
+              <div className="md:w-1/3 font-poppins md:mt-2 text-lg leading-8 flex flex-col space-y-6">
                 <p className="font-bold text-xl">
                   Hi, I am Ajmal, a senior software developer with 4+ years of
                   experience.
@@ -75,6 +75,9 @@ function Banner() {
                   </a>
                   .
                 </p>
+              </div>
+              <div className="rounded-full w-56 md:hidden m-10">
+                <img className="rounded-full mx-auto" src={Hero} alt="" />
               </div>
             </div>
 
