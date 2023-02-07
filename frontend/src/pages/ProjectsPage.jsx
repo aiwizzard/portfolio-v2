@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import Projects from "../components/Projects";
+import TopNavBar from "../components/TopNavbar";
 
 function ProjectsPage() {
   const userDetails = useSelector((state) => state.user.details);
@@ -7,6 +8,7 @@ function ProjectsPage() {
     <>
       {userDetails && (
         <div>
+          <TopNavBar />
           <Projects />
         </div>
       )}

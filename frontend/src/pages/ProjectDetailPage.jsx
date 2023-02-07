@@ -28,15 +28,18 @@ function ProjectDetailPage() {
   }, [params.id]);
   return (
     <>
+    <div className="flex flex-col">
+
       <div className="flex p-10">
         <IoArrowBack
-          onClick={() => navigate("/")}
+          onClick={() => navigate(-1)}
           className="text-2xl font-bold text-purple-dark"
-        />
+          />
+      </div>
         <h1 className="flex-grow text-purple-dark text-3xl text-center xl:mb-6">
           {projectDetails && projectDetails.title}
         </h1>
-      </div>
+          </div>
       <div className="flex flex-col justify-center items-center space-y-6">
         <img
           className="w-full xl:w-6/12 h-full text-center"

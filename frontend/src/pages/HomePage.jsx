@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Projects from "../components/Projects";
 import { useEffect, useState } from "react";
 import { setUserDetails } from "../redux/userActions";
+import TopNavBar from "../components/TopNavbar";
 
 function HomePage() {
   const userDetails = useSelector((state) => state.user.details);
@@ -34,6 +35,7 @@ function HomePage() {
     <>
       {userDetails && (
         <div className="bg-white">
+          <TopNavBar />
           <Banner />
           {/* <div className="border-b border-purple-500 mx-10 my-10" />
           <Experience />

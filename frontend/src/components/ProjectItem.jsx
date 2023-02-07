@@ -4,7 +4,7 @@ function ProjectItem({ project }) {
   const navigate = useNavigate();
   return (
     <>
-      <div className="max-w-sm rounded cursor-pointer" onClick={() => navigate(`projects/${project.id}`)}>
+      <div className="max-w-sm rounded cursor-pointer" onClick={() => navigate(`/projects/${project.id}`)}>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2 text-center">{project.title}</div>
           <p className="text-gray-700 text-base text-center">{project.body}</p>
