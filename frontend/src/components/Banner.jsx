@@ -9,7 +9,7 @@ function Banner() {
     <>
       {userDetails && (
         <div className="mt-10 flex flex-row justify-center">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center px-6">
             <div className="flex self-center flex-col md:flex-row justify-center md:-ml-56 md:p-6 items-center md:items-start space-x-0 md:space-x-14 ">
               <div className="rounded-full w-56 hidden md:flex">
                 <img className="rounded-full mx-auto" src={Hero} alt="" />
