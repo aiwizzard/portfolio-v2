@@ -3,13 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { setProjectDetails } from "../redux/userActions";
 import { IoArrowBack } from "react-icons/io5";
 import { useNavigate, useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function ProjectDetailPage() {
   const projectDetails = useSelector((state) => state.user.projectDetails);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const params = useParams();
+  const [html, setHTML] = useState({ __html: "" });
   const fetchProjectDetails = (id) => {
     axios({
       method: "get",
@@ -17,6 +18,7 @@ function ProjectDetailPage() {
     })
       .then((res) => {
         dispatch(setProjectDetails(res.data.data));
+        setHTML({ __html: res.data.data.body });
         console.log(res);
       })
       .catch((error) => {
@@ -28,24 +30,26 @@ function ProjectDetailPage() {
   }, [params.id]);
   return (
     <>
-    <div className="flex flex-col">
-
-      <div className="flex p-10">
-        <IoArrowBack
-          onClick={() => navigate(-1)}
-          className="text-2xl font-bold text-purple-dark"
+      <div className="flex flex-col">
+        <div className="flex p-10">
+          <IoArrowBack
+            onClick={() => navigate(-1)}
+            className="text-2xl font-bold text-purple-dark"
           />
-      </div>
+        </div>
         <h1 className="flex-grow text-purple-dark text-3xl text-center xl:mb-6">
           {projectDetails && projectDetails.title}
         </h1>
-          </div>
+      </div>
       <div className="flex flex-col justify-center items-center space-y-6">
-        <img
-          className="w-full xl:w-6/12 h-full text-center"
-          src={projectDetails && projectDetails.image_url}
-          alt="Not Available"
-        />
+        {projectDetails &&
+          projectDetails.image_url && (
+            <img
+              className="w-full xl:w-6/12 h-full text-center"
+              src={projectDetails.image_url}
+              alt="Not Available"
+            />
+          )}
         {projectDetails && projectDetails.link && (
           <a
             href={projectDetails.link}
@@ -58,9 +62,12 @@ function ProjectDetailPage() {
             </span>
           </a>
         )}
-        <p className="text-center font-normal text-gray-800 xl:text-xl">
-          {projectDetails && projectDetails.body}
-        </p>
+        {projectDetails && (
+          <div
+            className="text-center font-normal text-gray-800 xl:text-xl"
+            dangerouslySetInnerHTML={html}
+          />
+        )}
         {projectDetails && projectDetails.tags.length > 0 && (
           <div className="px-6 pt-4 pb-2">
             {projectDetails.tags.map((tag) => {
