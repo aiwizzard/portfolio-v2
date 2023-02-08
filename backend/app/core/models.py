@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from ckeditor import fields
 
 # static_url = "http://localhost:8000"
 # static_url = "http://0.0.0.0"
@@ -7,6 +8,7 @@ static_url = "https://ajmalk.com"
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    bio = fields.RichTextField()
     profile_image = models.ImageField(blank=True, null=True)
     resume = models.FileField(blank=True, null=True)
     name = models.CharField(max_length=50, blank=True, null=True)
@@ -43,7 +45,8 @@ class Social(models.Model):
 
 class Project(models.Model):
     title = models.CharField(max_length=40, blank=True, null=True)
-    body = models.TextField(blank=True, null=True)
+    body = fields.RichTextField()
+    description = fields.RichTextField()
     link = models.URLField(max_length=200, blank=True, null=True)
     image = models.ImageField(blank=True, null=True)
     tags = models.ManyToManyField('Tag', blank=True)

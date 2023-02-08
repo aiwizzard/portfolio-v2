@@ -20,7 +20,7 @@ class ProjectSerializer(serializers.ModelSerializer):
     tags = TagSerializer("tags", many=True)
     class Meta:
         model = Project
-        fields = ["id", "title", "body", "image_url", "tags"]
+        fields = ["id", "title", "description", "body", "image_url", "tags"]
 
 class ExperienceSerializer(serializers.ModelSerializer):
     duties = DutySeriallizer("duties", many=True)
@@ -41,7 +41,7 @@ class HomeSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Profile
-        fields = ["id", "image_url", "name", "socials", "email", "phone", "location", "projects", "experiences", "services"]
+        fields = ["id", "image_url", "name", "bio", "socials", "email", "phone", "location", "projects", "experiences", "services"]
         depth = 1
 
 
