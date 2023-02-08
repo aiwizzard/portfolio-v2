@@ -8,8 +8,8 @@ function TopNavBar() {
   const navigate = useNavigate();
   return (
     <>
-      <nav className="flex flex-wrap items-center justify-between px-2 py-2 bg-white w-full mb-4 mt-4">
-        <div className="container px-4 mx-auto flex flex-row flex-wrap items-center justify-between">
+      <nav className="flex flex-wrap items-center justify-between px-2 py-2 bg-white mb-4 mt-4">
+        <div className="container px-4 mx-auto flex flex-row flex-wrap items-center justify-between md:w-4/6">
           <div className="w-full relative flex justify-between ">
             <button
               className="nav-item px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-700 hover:opacity-80 hover:underline"
