@@ -1,14 +1,14 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
-# GNU Make 4.3
+# GNU Make 4.4
 # Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2020 Free Software Foundation, Inc.
-# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# Copyright (C) 1988-2022 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Feb  7 15:35:14 2023
+# Make data base, printed on Tue Feb 28 15:02:53 2023
 
 # Variables
 
@@ -21,13 +21,15 @@ NO_AT_BRIDGE = 1
 # environment
 GTK_RC_FILES = /etc/gtk/gtkrc:/home/ajmal/.gtkrc:/home/ajmal/.config/gtkrc
 # environment
-SNAP_INSTANCE_KEY = 
+KONSOLE_DBUS_SERVICE = :1.398
 # environment
 LC_NAME = en_IN
 # environment
 LC_NUMERIC = en_IN
 # environment
-VSCODE_CWD = /home/ajmal
+VSCODE_CWD = /home/ajmal/Projects/dev/portfolio-v2
+# environment
+WINDOWID = 113246221
 # environment
 LC_ADDRESS = en_IN
 # default
@@ -37,7 +39,9 @@ MAKE_COMMAND := make
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/117/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/119/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+KONSOLE_VERSION = 221202
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -54,12 +58,14 @@ MAIL = /var/spool/mail/ajmal
 XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 OLDPWD = /home/ajmal
+# environment
+KONSOLE_DBUS_WINDOW = /Windows/1
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/ajmal/.config/Code/CachedData/97dec172d3256f8ca4bfb2143f3f76b503ca0534
+VSCODE_CODE_CACHE_PATH = /home/ajmal/.config/Code/CachedData/441438abd1ac652551dbe4d408dfcec8a499b8bf
 # environment
 XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
 # environment
@@ -69,7 +75,9 @@ XAUTHORITY = /home/ajmal/.Xauthority
 # default
 .LOADED := 
 # default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+.INCLUDE_DIRS := /usr/local/include /usr/include
+# environment
+COLORFGBG = 15;0
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -100,14 +108,12 @@ XDG_SESSION_DESKTOP = KDE
 MAKEFILE_LIST := Makefile
 # environment
 CONDA_SHLVL = 0
-# environment
-SNAP_REEXEC = 
 # automatic
 @F = $(notdir $@)
 # environment
 ZSH = /home/ajmal/.oh-my-zsh
 # environment
-VSCODE_PID = 4806
+VSCODE_PID = 36272
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -115,11 +121,7 @@ CUDA_PATH = /opt/cuda
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
-# environment
 CONDA_PYTHON_EXE = /home/ajmal/miniconda3/bin/python
-# environment
-SESSION_MANAGER = local/ajmal-manjaro:@/tmp/.ICE-unix/1216,unix/ajmal-manjaro:/tmp/.ICE-unix/1216
 # automatic
 *F = $(notdir $*)
 # environment
@@ -128,6 +130,8 @@ CHROME_DESKTOP = code-url-handler.desktop
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
+# environment
+P9K_TTY = old
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # default
@@ -139,7 +143,7 @@ MAKECMDGOALS := all
 # environment
 LD_LIBRARY_PATH = /usr/local/cuda/lib
 # environment
-SHLVL = 1
+SHLVL = 2
 # environment
 MAKELEVEL := 0
 # default
@@ -147,7 +151,7 @@ MAKE = $(MAKE_COMMAND)
 # environment
 SNAP_COOKIE = -CRwRsb3C7J-_ooEYh7IOCkd7LqlAqT91pJAOydUQdYOXRk-LN8w
 # environment
-PATH = /home/ajmal/google-cloud-sdk/bin:/home/ajmal/miniconda3/condabin:/home/ajmal/src/flutter/bin:/home/ajmal/tools/nvim-linux64/bin:/home/ajmal/bin:/usr/local/bin:/home/ajmal/.local/bin:/home/ajmal/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/usr/lib/jvm/default/bin:/usr/local/cuda/bin:/usr/bin/Postman:/home/ajmal/.node_modules_global/bin:/home/ajmal/.fzf/bin:/home/ajmal
+PATH = /home/ajmal/google-cloud-sdk/bin:/home/ajmal/miniconda3/condabin:/home/ajmal/src/flutter/bin:/home/ajmal/tools/nvim-linux64/bin:/home/ajmal/bin:/usr/local/bin:/home/ajmal/.local/bin:/home/ajmal/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/local/cuda/bin:/usr/bin/Postman:/home/ajmal/.node_modules_global/bin:/home/ajmal/.fzf/bin:/home/ajmal
 # default
 MAKEFILES := 
 # environment
@@ -163,11 +167,11 @@ LC_TIME = en_IN
 # environment
 AWS_VAULT_BACKEND = file
 # environment
-SNAP = /snap/code/117
+SNAP = /snap/code/119
 # environment
-INVOCATION_ID = 051d50c648904eabb9d55aa27f626d6c
+INVOCATION_ID = 44dac614067e410e8a5a2db10c70d5f2
 # environment
-SNAP_REVISION = 117
+SNAP_REVISION = 119
 # environment
 SNAP_REAL_HOME = /home/ajmal
 # environment
@@ -181,7 +185,7 @@ XDG_SEAT = seat0
 # environment
 XDG_CURRENT_DESKTOP = KDE
 # environment
-LS_COLORS = 
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
 # automatic
 +F = $(notdir $+)
 # environment
@@ -205,7 +209,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := change-deploy-app
 # environment
-SYSTEMD_EXEC_PID = 1308
+SYSTEMD_EXEC_PID = 1082
 # environment
 DISPLAY = :0
 # environment
@@ -213,15 +217,17 @@ GTK_MODULES = canberra-gtk-module
 # environment
 USER = ajmal
 # default
-MAKE_VERSION := 4.3
+MAKE_VERSION := 4.4
 # environment
 KDE_SESSION_UID = 1000
 # environment
-SNAP_DATA = /var/snap/code/117
+SNAP_DATA = /var/snap/code/119
 # environment
 SNAP_CONTEXT = -CRwRsb3C7J-_ooEYh7IOCkd7LqlAqT91pJAOydUQdYOXRk-LN8w
 # environment
-MANAGERPID = 1121
+KONSOLE_DBUS_SESSION = /Sessions/1
+# environment
+MANAGERPID = 924
 # environment
 LC_MEASUREMENT = en_IN
 # environment
@@ -235,11 +241,11 @@ LC_PAPER = en_IN
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
+COLORTERM = truecolor
+# environment
 GDK_PIXBUF_MODULE_FILE = /home/ajmal/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-_CE_M = 
-# environment
-JOURNAL_STREAM = 8:24966
+JOURNAL_STREAM = 8:24291
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -251,11 +257,13 @@ HOME = /home/ajmal
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-2858b988-1.74.3-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-2858b988-1.75.1-main.sock
+# environment
+TERM = xterm-256color
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/117/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/119/usr/share/glib-2.0/schemas
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -265,11 +273,14 @@ XCURSOR_SIZE = 24
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = 97dec172
+SNAP_VERSION = 441438ab
 # default
 SUFFIXES := 
 # environment
 QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# environment
+ 
+_P9K_TTY = /dev/pts/2
 # environment
 VSCODE_CLI = 1
 # environment
@@ -277,23 +288,23 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 SNAP_COMMON = /var/snap/code/common
 # environment
+SHELL_SESSION_ID = 84249db6dc064bf1bb33bf0d48abe334
+# environment
 KDE_SESSION_VERSION = 5
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver jobserver-fifo output-sync check-symlink guile load
 # environment
 KDE_FULL_SESSION = true
 # environment
-SNAP_USER_DATA = /home/ajmal/snap/code/117
+SNAP_USER_DATA = /home/ajmal/snap/code/119
 # environment
 CONDA_EXE = /home/ajmal/miniconda3/bin/conda
-# environment
-_CE_CONDA = 
 # environment
 LC_IDENTIFICATION = en_IN
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=140/1024=14%, Rehash=0, Collisions=9/170=5%
+# Load=145/1024=14%, Rehash=0, Collisions=12/178=7%
 
 # Pattern-specific Variable Values
 
@@ -308,14 +319,14 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Implicit Rules
 
 # No implicit rules.
- 
 
 # Files
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-24 22:38:40.449748779
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2022-05-24 21:08:40.449748779
 #  File has been updated.
 #  Successfully updated.
 
@@ -351,7 +362,7 @@ all:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/16=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -361,9 +372,9 @@ all:
 # strcache buffers: 1 (0) / strings = 20 / storage = 199 B / avg = 9 B
 # current buf: size = 8162 B / used = 199 B / count = 20 / avg = 9 B
 
-# strcache performance: lookups = 26 / hit rate = 23%
+# strcache performance: lookups = 27 / hit rate = 25%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=0/26=0%
-# Finished Make data base on Tue Feb  7 15:35:14 2023
+# Load=20/8192=0%, Rehash=0, Collisions=0/27=0%
+# Finished Make data base on Tue Feb 28 15:02:53 2023
 
  
