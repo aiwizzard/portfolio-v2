@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Feb 28 15:02:53 2023
+# Make data base, printed on Mon Mar  6 22:14:41 2023
 
 # Variables
 
@@ -21,7 +21,7 @@ NO_AT_BRIDGE = 1
 # environment
 GTK_RC_FILES = /etc/gtk/gtkrc:/home/ajmal/.gtkrc:/home/ajmal/.config/gtkrc
 # environment
-KONSOLE_DBUS_SERVICE = :1.398
+KONSOLE_DBUS_SERVICE = :1.1498
 # environment
 LC_NAME = en_IN
 # environment
@@ -29,7 +29,7 @@ LC_NUMERIC = en_IN
 # environment
 VSCODE_CWD = /home/ajmal/Projects/dev/portfolio-v2
 # environment
-WINDOWID = 113246221
+WINDOWID = 4194317
 # environment
 LC_ADDRESS = en_IN
 # default
@@ -57,7 +57,7 @@ MAIL = /var/spool/mail/ajmal
 # environment
 XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
-OLDPWD = /home/ajmal
+OLDPWD = /home/ajmal/Projects/dev
 # environment
 KONSOLE_DBUS_WINDOW = /Windows/1
 # automatic
@@ -113,7 +113,7 @@ CONDA_SHLVL = 0
 # environment
 ZSH = /home/ajmal/.oh-my-zsh
 # environment
-VSCODE_PID = 36272
+VSCODE_PID = 104706
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -169,7 +169,7 @@ AWS_VAULT_BACKEND = file
 # environment
 SNAP = /snap/code/119
 # environment
-INVOCATION_ID = 44dac614067e410e8a5a2db10c70d5f2
+INVOCATION_ID = 92bbd31a43a94a68af0d84487450e088
 # environment
 SNAP_REVISION = 119
 # environment
@@ -209,7 +209,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := change-deploy-app
 # environment
-SYSTEMD_EXEC_PID = 1082
+SYSTEMD_EXEC_PID = 1081
 # environment
 DISPLAY = :0
 # environment
@@ -227,7 +227,7 @@ SNAP_CONTEXT = -CRwRsb3C7J-_ooEYh7IOCkd7LqlAqT91pJAOydUQdYOXRk-LN8w
 # environment
 KONSOLE_DBUS_SESSION = /Sessions/1
 # environment
-MANAGERPID = 924
+MANAGERPID = 916
 # environment
 LC_MEASUREMENT = en_IN
 # environment
@@ -245,7 +245,7 @@ COLORTERM = truecolor
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/ajmal/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:24291
+JOURNAL_STREAM = 8:21043
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -279,7 +279,6 @@ SUFFIXES :=
 # environment
 QT_AUTO_SCREEN_SCALE_FACTOR = 0
 # environment
- 
 _P9K_TTY = /dev/pts/2
 # environment
 VSCODE_CLI = 1
@@ -288,10 +287,11 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 SNAP_COMMON = /var/snap/code/common
 # environment
-SHELL_SESSION_ID = 84249db6dc064bf1bb33bf0d48abe334
+SHELL_SESSION_ID = 162e1722ddd146aebf9e74af2e6f7635
 # environment
 KDE_SESSION_VERSION = 5
 # default
+ 
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver jobserver-fifo output-sync check-symlink guile load
 # environment
 KDE_FULL_SESSION = true
@@ -375,6 +375,6 @@ all:
 # strcache performance: lookups = 27 / hit rate = 25%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=0/27=0%
-# Finished Make data base on Tue Feb 28 15:02:53 2023
+# Finished Make data base on Mon Mar  6 22:14:41 2023
 
  

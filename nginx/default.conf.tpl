@@ -3,6 +3,8 @@ server {
 	listen 443 ssl;
 	
     server_name ajmalk.com;
+
+	return 301 https://$host$request_uri;
 	
 	ssl_certificate /etc/nginx/certs/fullchain.pem;
     ssl_certificate_key /etc/nginx/certs/privkey.pem;
