@@ -64,7 +64,7 @@ function ProjectDetailPage() {
         )}
         {projectDetails && (
           <div
-            className="text-left font-normal text-gray-800 xl:text-xl"
+            className="text-left pl-4 font-normal text-gray-800 xl:text-xl"
             dangerouslySetInnerHTML={html}
           />
         )}
