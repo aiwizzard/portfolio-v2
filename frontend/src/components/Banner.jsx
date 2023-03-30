@@ -1,4 +1,3 @@
-import Hero from "../images/profile.png";
 import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
