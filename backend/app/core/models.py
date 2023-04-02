@@ -6,6 +6,7 @@ from ckeditor import fields
 # static_url = "http://0.0.0.0"
 static_url = "https://ajmalk.com"
 
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = fields.RichTextField()
@@ -43,6 +44,7 @@ class Social(models.Model):
             return self.name
         return ""
 
+
 class Project(models.Model):
     title = models.CharField(max_length=40, blank=True, null=True)
     body = fields.RichTextField()
@@ -62,6 +64,7 @@ class Project(models.Model):
             return self.title
         return ""
 
+
 class Tag(models.Model):
     name = models.CharField(max_length=50, blank=True, null=True)
 
@@ -69,6 +72,7 @@ class Tag(models.Model):
         if self.name:
             return self.name
         return ""
+
 
 class Service(models.Model):
     title = models.CharField(max_length=40, blank=True, null=True)
@@ -92,6 +96,7 @@ class Experience(models.Model):
             return f"{self.designation}-{self.company}"
         return ""
 
+
 class Duty(models.Model):
     name = models.CharField(max_length=250, blank=True, null=True)
 
@@ -112,3 +117,8 @@ class Contact(models.Model):
         if self.name:
             return self.name
         return ""
+
+
+class Blog(models.Model):
+    title = models.CharField(max_lenght=250, blank=True, null=True)
+    content = models.RichTextField(blank=True, null=True)
