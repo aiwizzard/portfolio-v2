@@ -120,5 +120,5 @@ class Contact(models.Model):
 
 
 class Blog(models.Model):
-    title = models.CharField(max_lenght=250, blank=True, null=True)
-    content = models.RichTextField(blank=True, null=True)
+    title = models.CharField(max_length=250, blank=True, null=True)
+    content = fields.RichTextField(blank=True, null=True)
